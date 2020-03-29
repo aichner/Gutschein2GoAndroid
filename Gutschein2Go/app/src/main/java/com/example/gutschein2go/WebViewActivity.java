@@ -1,16 +1,13 @@
 package com.example.gutschein2go;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Patterns;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ProgressBar;
 
 public class WebViewActivity extends AppCompatActivity {
 
@@ -40,7 +37,7 @@ public class WebViewActivity extends AppCompatActivity {
                     webView.loadUrl(url);
                 }
                 else {
-                    webView.loadUrl("https://www.g2g.at/verify/enter");
+                    webView.loadUrl("https://www.g2g.at/verify?enter&mobile");
                 }
             }
             else {
@@ -50,11 +47,16 @@ public class WebViewActivity extends AppCompatActivity {
 
         }
         else {
-            webView.loadUrl("https://www.g2g.at/verify/enter");
+            webView.loadUrl("https://www.g2g.at/verify?enter&mobile");
         }
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menuwebview, menu);
+        return true;
+    }
 
-    public void ButtonBack_Click (View v) {
+    public void MenuItemBack_Click (MenuItem m) {
         Intent i = new Intent(this, MainActivity.class);
         this.startActivity(i);
     }

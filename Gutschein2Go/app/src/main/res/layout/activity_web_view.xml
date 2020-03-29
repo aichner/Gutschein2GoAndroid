@@ -10,25 +10,8 @@
         android:id="@+id/WebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-96dp">
 
     </WebView>
 
-    <Button
-        android:id="@+id/buttonGutschein"
-        android:layout_width="219dp"
-        android:layout_height="71dp"
-        android:background="#ff8910"
-        android:padding="30px"
-        android:text="Weiteren Gutschein überprüfen"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:onClick="ButtonBack_Click"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WebView"
-        tools:text="Weiteren Gutschein überprüfen" />
 </androidx.constraintlayout.widget.ConstraintLayout>

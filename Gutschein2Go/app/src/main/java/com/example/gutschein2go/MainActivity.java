@@ -1,6 +1,5 @@
 package com.example.gutschein2go;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
